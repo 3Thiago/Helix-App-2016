@@ -47,17 +47,17 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         int id = item.getItemId();
-        if (id == R.id.nav_camara) {
+        if (id == R.id.nav_events) {
             Toast.makeText(getApplicationContext(), "Events", Toast.LENGTH_SHORT).show();
             fragmentManager.beginTransaction()
                     .replace(R.id.container, new EventsFragment()).commit();
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_helix) {
             fragmentManager.beginTransaction()
                     .replace(R.id.container, new HelixFragment()).commit();
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_schedule) {
             fragmentManager.beginTransaction()
                     .replace(R.id.container, new ScheduleFragment()).commit();
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_contact_us) {
             fragmentManager.beginTransaction()
                     .replace(R.id.container, new ContactFragment()).commit();
         }
