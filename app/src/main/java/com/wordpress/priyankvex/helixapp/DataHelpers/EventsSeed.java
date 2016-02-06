@@ -20,36 +20,36 @@ public class EventsSeed {
 
         // Adding the first event
         Event event1 = new Event();
-        event1.setEventName("Event Name 1");
-        event1.setEventImage(R.drawable.logo2);
+        event1.setEventName("App Development");
+        event1.setEventImage(R.drawable.mobileapp);
 
         Event event2 = new Event();
-        event2.setEventName("Event Name 2");
-        event2.setEventImage(R.drawable.logo2);
+        event2.setEventName("My Smart City Jabalpur");
+        event2.setEventImage(R.drawable.smart_city);
 
         Event event3 = new Event();
-        event3.setEventName("Event Name 3");
-        event3.setEventImage(R.drawable.logo2);
+        event3.setEventName("Build A Business");
+        event3.setEventImage(R.drawable.startup);
 
         Event event4 = new Event();
-        event4.setEventName("Event Name 4");
-        event4.setEventImage(R.drawable.logo2);
+        event4.setEventName("Round Table Conclave");
+        event4.setEventImage(R.drawable.panel);
 
         Event event5 = new Event();
-        event5.setEventName("Event Name 5");
-        event5.setEventImage(R.drawable.logo2);
+        event5.setEventName("Photography");
+        event5.setEventImage(R.drawable.photography);
 
         Event event6 = new Event();
-        event6.setEventName("Event Name 6");
-        event6.setEventImage(R.drawable.logo2);
+        event6.setEventName("Code Conclave");
+        event6.setEventImage(R.drawable.code_event);
 
         Event event7 = new Event();
-        event7.setEventName("Event Name 7");
-        event7.setEventImage(R.drawable.logo2);
+        event7.setEventName("Mock Campus");
+        event7.setEventImage(R.drawable.job);
 
         Event event8 = new Event();
-        event8.setEventName("Event Name 8");
-        event8.setEventImage(R.drawable.logo2);
+        event8.setEventName("Mock UPSC");
+        event8.setEventImage(R.drawable.upsc);
 
         events.add(event1);
         events.add(event2);
