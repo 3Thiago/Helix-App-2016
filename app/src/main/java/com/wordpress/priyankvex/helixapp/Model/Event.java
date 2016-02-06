@@ -8,7 +8,7 @@ public class Event {
 
     private String eventName;
     private int eventImage;
-
+    private int eventId;
 
     public String getEventName() {
         return eventName;
@@ -24,5 +24,13 @@ public class Event {
 
     public void setEventImage(int eventImage) {
         this.eventImage = eventImage;
+    }
+
+    public int getEventId() {
+        return eventId;
+    }
+
+    public void setEventId(int eventId) {
+        this.eventId = eventId;
     }
 }
