@@ -1,23 +1,22 @@
 package com.wordpress.priyankvex.helixapp;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 /**
  * Created by priyank on 6/2/16.
- * Fragment to display event schedule
+ * Fragment to show events
  */
-public class FragmentSchedule extends Fragment{
+public class EventsFragment extends Fragment{
 
-    @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView =  inflater.inflate(R.layout.fragment_schedule, container, false);
+        View rootView =  inflater.inflate(R.layout.fragment_events, container, false);
+        Log.d("helix", "Events on create");
         return rootView;
     }
-
 }

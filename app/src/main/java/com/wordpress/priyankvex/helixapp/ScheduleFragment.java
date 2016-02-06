@@ -9,14 +9,15 @@ import android.view.ViewGroup;
 
 /**
  * Created by priyank on 6/2/16.
- * Fragment to show events
+ * Fragment to display event schedule
  */
-public class FragmentEvents extends Fragment{
+public class ScheduleFragment extends Fragment{
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView =  inflater.inflate(R.layout.fragment_events, container, false);
+        View rootView =  inflater.inflate(R.layout.fragment_schedule, container, false);
         return rootView;
     }
+
 }

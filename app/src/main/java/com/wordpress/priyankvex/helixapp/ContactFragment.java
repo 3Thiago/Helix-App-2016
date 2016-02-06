@@ -11,7 +11,7 @@ import android.view.ViewGroup;
  * Created by priyank on 6/2/16.
  * Fragment for contacts
  */
-public class FragmentContact extends Fragment{
+public class ContactFragment extends Fragment{
 
     @Nullable
     @Override
