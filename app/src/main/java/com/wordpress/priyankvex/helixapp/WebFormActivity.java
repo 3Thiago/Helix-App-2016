@@ -22,6 +22,7 @@ public class WebFormActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_form);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
         url = getIntent().getStringExtra("url");
         progressDialog = new ProgressDialog(WebFormActivity.this);
         progressDialog.setMessage("at least you're not on hold");
@@ -46,5 +47,11 @@ public class WebFormActivity extends AppCompatActivity{
                 progressDialog.dismiss();
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        finish();
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 }
