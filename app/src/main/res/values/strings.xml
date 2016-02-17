@@ -15,4 +15,6 @@ Helix aims at exploring minds of students and sending a thought provoking wave f
 Gokulpur, Jabalpur, 482011</string>
     <string name="email">helix@jecjabalpur.ac.in</string>
     <string name="phone">+91 898-921-1150 \n+91 738-949-1911</string>
+    <string name="action_register">Register</string>
+    <string name="more_info">More Info</string>
 </resources>
