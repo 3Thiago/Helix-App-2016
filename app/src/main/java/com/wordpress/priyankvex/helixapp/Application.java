@@ -20,11 +20,6 @@ public class Application extends android.app.Application{
                 .threadPriority(Thread.NORM_PRIORITY - 2) // default
                 .tasksProcessingOrder(QueueProcessingType.FIFO) // default
                 .denyCacheImageMultipleSizesInMemory()
-                .memoryCache(new LruMemoryCache(2 * 1024 * 1024))
-                .memoryCacheSize(2 * 1024 * 1024)
-                .memoryCacheSizePercentage(13) // default
-                .diskCacheSize(50 * 1024 * 1024)
-                .diskCacheFileCount(100)
                 .writeDebugLogs()
                 .build();
         // Initializing image loader with config

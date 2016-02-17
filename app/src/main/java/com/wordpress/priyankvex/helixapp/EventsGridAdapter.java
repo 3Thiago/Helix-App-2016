@@ -73,13 +73,13 @@ public class EventsGridAdapter extends BaseAdapter{
             holder = new ViewHolder();
             convertView = mInflater.inflate(R.layout.item_events_grid, parent, false);
             holder.imageViewEvent = (ImageView) convertView.findViewById(R.id.imageViewEvent);
-            holder.textViewEvent = (TextView) convertView.findViewById(R.id.textViewEvent);
             convertView.setTag(holder);
         }
         else{
             holder = (ViewHolder)convertView.getTag();
         }
 
+        holder.textViewEvent = (TextView) convertView.findViewById(R.id.textViewEvent);
         holder.textViewEvent.setText(event.getEventName());
         ImageLoader.getInstance()
                 .displayImage("drawable://" + event.getEventImage(), holder.imageViewEvent, options);
