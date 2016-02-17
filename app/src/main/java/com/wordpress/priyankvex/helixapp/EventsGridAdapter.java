@@ -1,6 +1,7 @@
 package com.wordpress.priyankvex.helixapp;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
 import com.wordpress.priyankvex.helixapp.Model.Event;
 
 import java.util.ArrayList;
@@ -20,6 +23,7 @@ public class EventsGridAdapter extends BaseAdapter{
     Context mContext;
     ArrayList<Event> mEvents;
     LayoutInflater mInflater;
+    private DisplayImageOptions options;
 
     public EventsGridAdapter(Context context, ArrayList<Event> events) {
 
@@ -27,6 +31,15 @@ public class EventsGridAdapter extends BaseAdapter{
         this.mEvents = events;
         this.mInflater = (LayoutInflater)context.
                 getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        options = new DisplayImageOptions.Builder()
+                .showImageOnLoading(R.drawable.spinner)
+                .showImageForEmptyUri(R.drawable.spinner)
+                .showImageOnFail(R.drawable.spinner)
+                .cacheInMemory(true)
+                .cacheOnDisk(true)
+                .considerExifParams(true)
+                .bitmapConfig(Bitmap.Config.RGB_565)
+                .build();
     }
 
     @Override
@@ -68,7 +81,8 @@ public class EventsGridAdapter extends BaseAdapter{
         }
 
         holder.textViewEvent.setText(event.getEventName());
-        holder.imageViewEvent.setImageResource(event.getEventImage());
+        ImageLoader.getInstance()
+                .displayImage("drawable://" + event.getEventImage(), holder.imageViewEvent, options);
 
         return convertView;
     }
