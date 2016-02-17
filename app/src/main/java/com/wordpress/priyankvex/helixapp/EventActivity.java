@@ -22,6 +22,7 @@ import mehdi.sakout.fancybuttons.FancyButton;
 public class EventActivity extends AppCompatActivity{
 
     private ImageView imageViewEvent;
+    private TextView textViewTitle;
     private TextView textViewSubTitle;
     private TextView textViewDetails;
     private TextView textViewLevelNote;
@@ -66,6 +67,7 @@ public class EventActivity extends AppCompatActivity{
 
     private void findViews(){
         imageViewEvent = (ImageView) findViewById(R.id.imageViewEvent);
+        textViewTitle = (TextView) findViewById(R.id.textViewTitle);
         textViewSubTitle = (TextView) findViewById(R.id.textViewSubTitle);
         textViewDetails = (TextView) findViewById(R.id.textViewEventInfo);
         textViewLevelNote = (TextView) findViewById(R.id.textViewLevelNote);
@@ -80,6 +82,7 @@ public class EventActivity extends AppCompatActivity{
 
     private void setData(){
         imageViewEvent.setImageResource(mEvent.getEventImage());
+        textViewTitle.setText(mEvent.getEventName());
         textViewSubTitle.setText(mEvent.getEventSubTitle());
         textViewDetails.setText(mEvent.getEventDetails());
         textViewLevelNote.setText(mEvent.getLevelNote());
