@@ -1,15 +1,14 @@
 package com.wordpress.priyankvex.helixapp;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -53,7 +52,6 @@ public class MainActivity extends AppCompatActivity
         FragmentManager fragmentManager = getSupportFragmentManager();
         int id = item.getItemId();
         if (id == R.id.nav_events) {
-            Toast.makeText(getApplicationContext(), "Events", Toast.LENGTH_SHORT).show();
             fragmentManager.beginTransaction()
                     .replace(R.id.container, new EventsFragment()).commit();
         } else if (id == R.id.nav_helix) {

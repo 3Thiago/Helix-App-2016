@@ -1,5 +1,7 @@
 package com.wordpress.priyankvex.helixapp;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -40,7 +42,8 @@ public class EventActivity extends AppCompatActivity{
         int eventId = getIntent().getIntExtra("eventId", -1);
         mEvent = EventsSeed.getEventbyId(eventId);
         findViews();
-        setData();
+        if (mEvent != null)
+            setData();
     }
 
     @Override
@@ -54,6 +57,9 @@ public class EventActivity extends AppCompatActivity{
         int id = item.getItemId();
         if (id == R.id.action_register){
             // start register activity
+            Intent i = new Intent(EventActivity.this, WebFormActivity.class);
+            i.putExtra("url", EventsSeed.registerationLink);
+            startActivity(i);
         }
         return super.onOptionsItemSelected(item);
     }
@@ -94,10 +100,13 @@ public class EventActivity extends AppCompatActivity{
                 textViewLevelFour.setText("Level 4\n" + mEvent.getLevelFour());
             }
         }
+        if (mEvent.getMoreInfoLink().equals("")) buttonMoreInfo.setVisibility(View.GONE);
         buttonMoreInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Start the browser intent
+               Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(mEvent.getMoreInfoLink()));
+                startActivity(browserIntent);
             }
         });
     }
