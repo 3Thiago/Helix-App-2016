@@ -13,6 +13,14 @@ public class EventsSeed {
 
 
     public static String registerationLink = "https://docs.google.com/forms/d/16oJHtBey5Jnu6C0_06rayXXNl0dY-YshMC0CnIgMncM/formResponse";
+    public static Event event1;
+    public static Event event2;
+    public static Event event3;
+    public static Event event4;
+    public static Event event5;
+    public static Event event6;
+    public static Event event7;
+    public static Event event8;
 
     /**
      * Returns list of events
@@ -22,7 +30,7 @@ public class EventsSeed {
         ArrayList<Event> events = new ArrayList<>();
 
         // Adding the first event
-        Event event1 = new Event();
+        event1 = new Event();
         event1.setEventId(1);
         event1.setEventName("App Development");
         event1.setEventImage(R.drawable.mobileapp);
@@ -35,7 +43,7 @@ public class EventsSeed {
         event1.setLevelThree("Live demo of working of the App(terminal run) - 1st March.");
         event1.setLevelFour("");
 
-        Event event2 = new Event();
+        event2 = new Event();
         event2.setEventId(2);
         event2.setEventName("My Smart City Jabalpur");
         event2.setEventImage(R.drawable.smart_city);
@@ -48,7 +56,7 @@ public class EventsSeed {
         event2.setLevelThree("12th/13th March (during the event at JEC)");
         event2.setLevelFour("");
 
-        Event event3 = new Event();
+        event3 = new Event();
         event3.setEventId(3);
         event3.setEventName("Build A Business");
         event3.setEventImage(R.drawable.startup);
@@ -61,7 +69,7 @@ public class EventsSeed {
         event3.setLevelThree("Teams are required to complete a task given in Level 2. – 12th/13th March (during the event at JEC)");
         event3.setLevelFour("");
 
-        Event event4 = new Event();
+        event4 = new Event();
         event4.setEventId(4);
         event4.setEventName("Round Table Conclave");
         event4.setEventImage(R.drawable.panel);
@@ -75,7 +83,7 @@ public class EventsSeed {
         event4.setLevelFour("");
 
 
-        Event event5 = new Event();
+        event5 = new Event();
         event5.setEventId(5);
         event5.setEventName("Humans of JEC");
         event5.setEventImage(R.drawable.photography);
@@ -89,7 +97,7 @@ public class EventsSeed {
         event5.setLevelThree("");
         event5.setLevelFour("");
 
-        Event event6 = new Event();
+        event6 = new Event();
         event6.setEventId(6);
         event6.setEventName("Code Conclave");
         event6.setEventImage(R.drawable.code_event);
@@ -102,7 +110,7 @@ public class EventsSeed {
         event6.setLevelThree("Coding Finale - 12th/13th March (during the event at JEC)");
         event6.setLevelFour("");
 
-        Event event7 = new Event();
+        event7 = new Event();
         event7.setEventId(7);
         event7.setEventName("Mock Campus");
         event7.setEventImage(R.drawable.job);
@@ -115,7 +123,7 @@ public class EventsSeed {
         event7.setLevelThree("Case Study/ Picture Perception/ Pseudo Codes Decoding / Video Synthesis/ - 9th March 2016");
         event7.setLevelFour("Technical/ Management/ HR interviews - 11th /12th /13th March");
 
-        Event event8 = new Event();
+        event8 = new Event();
         event8.setEventId(8);
         event8.setEventName("Mock UPSC");
         event8.setEventImage(R.drawable.upsc);
@@ -138,5 +146,36 @@ public class EventsSeed {
         events.add(event8);
 
         return events;
+    }
+
+    public static Event getEventbyId(int id){
+        Event event = null;
+        switch (id){
+            case 1:
+                event = event1;
+                break;
+            case 2:
+                event = event2;
+                break;
+            case 3:
+                event = event3;
+                break;
+            case 4:
+                event = event4;
+                break;
+            case 5:
+                event = event5;
+                break;
+            case 6:
+                event = event6;
+                break;
+            case 7:
+                event = event7;
+                break;
+            case 8:
+                event = event8;
+                break;
+        }
+        return event;
     }
 }

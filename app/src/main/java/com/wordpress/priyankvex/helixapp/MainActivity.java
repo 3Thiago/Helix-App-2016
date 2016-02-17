@@ -59,9 +59,6 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_helix) {
             fragmentManager.beginTransaction()
                     .replace(R.id.container, new HelixFragment()).commit();
-        } else if (id == R.id.nav_schedule) {
-            fragmentManager.beginTransaction()
-                    .replace(R.id.container, new ScheduleFragment()).commit();
         } else if (id == R.id.nav_contact_us) {
             fragmentManager.beginTransaction()
                     .replace(R.id.container, new ContactFragment()).commit();

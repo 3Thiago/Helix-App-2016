@@ -2,13 +2,11 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorAccent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     android:id="@+id/scrollView"
-    xmlns:fancy="http://schemas.android.com/apk/res-auto"
-   >
+    xmlns:fancy="http://schemas.android.com/apk/res-auto">
 
 <LinearLayout
     android:orientation="vertical"
@@ -28,6 +26,17 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/textViewSubTitle"
+        android:text="Be Better. Be Good."
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="7pt"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/textViewEventInfo"
         android:text="This is an application development competition. Participants can have individual participation or group participation. The winner will be decided by beta testing of the app, i.e., the participant(s) will have to promote his/her/their app so that people install it on their devices and give their reviews or rating."
         android:gravity="center"
@@ -40,6 +49,7 @@
         android:id="@+id/textViewLevelNote"
         android:text="Level Registrations will close on the day before the starting of level 1."
         android:gravity="center"
+        android:textStyle="bold"
         />
 
 
@@ -103,13 +113,36 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="30dp"
             />
-    </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textViewMoreDetails"
-        />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/colorPrimary"
+            android:id="@+id/line4"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewLevelFour"
+            android:gravity="center"
+            android:text="Level 1\nSubmission of SDLC and judgement - 22th February."
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="30dp"
+            />
+
+    </LinearLayout>
 
     <mehdi.sakout.fancybuttons.FancyButton
         android:id="@+id/buttonMoreInfo"
