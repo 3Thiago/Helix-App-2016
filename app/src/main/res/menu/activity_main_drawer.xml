@@ -11,10 +11,6 @@
             android:icon="@drawable/heart"
             android:title="What is Helix?" />
         <item
-            android:id="@+id/nav_schedule"
-            android:icon="@drawable/bell"
-            android:title="Schedule" />
-        <item
             android:id="@+id/nav_contact_us"
             android:icon="@drawable/user"
             android:title="Contact Us" />
