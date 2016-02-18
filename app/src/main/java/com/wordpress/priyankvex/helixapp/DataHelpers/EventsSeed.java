@@ -38,9 +38,9 @@ public class EventsSeed {
         event1.setEventDetails("This is an application development competition. Participants can have individual participation or group participation. The winner will be decided by beta testing of the app, i.e., the participant(s) will have to promote his/her/their app so that people install it on their devices and give their reviews or rating.");
         event1.setLevelNote("Level Registrations will close on the day before the starting of level 1");
         event1.setMoreInfoLink("https://drive.google.com/file/d/0B5iiTEqAQuR5Z1IwTUotQmZmODA");
-        event1.setLevelOne("Submission of SDLC and judgment- 22th feb.");
-        event1.setLevelTwo("Live demo of working of the App(terminal run) - 1st March.");
-        event1.setLevelThree("Live demo of working of the App(terminal run) - 1st March.");
+        event1.setLevelOne("Submission of SDLC and judgment- 24th feb.");
+        event1.setLevelTwo("Live demo of working of the App(terminal run) - 3rd March.");
+        event1.setLevelThree("Live demo of working of the App(terminal run) - 12th/13th March.");
         event1.setLevelFour("");
 
         event2 = new Event();
@@ -51,8 +51,8 @@ public class EventsSeed {
         event2.setEventDetails("A platform for the aspiring engineers to paint the canvas of their city with their innovative ideas. Ideas, which can promote economic opportunities, better governance and provide physical, social & economical infrastructure in Jabalpur");
         event2.setLevelNote("Level Registrations will close on the day before the starting of level 1");
         event2.setMoreInfoLink("https://drive.google.com/file/d/0B5iiTEqAQuR5NFBDbm13aDNjc3M");
-        event2.setLevelOne("Submission of idea (ppt) and judgement - 24th February");
-        event2.setLevelTwo("Iteration and enhancements submission and judgement- 3rd March");
+        event2.setLevelOne("Submission of idea (ppt) and judgement - 26th February");
+        event2.setLevelTwo("Iteration and enhancements submission and judgement- 5th March");
         event2.setLevelThree("12th/13th March (during the event at JEC)");
         event2.setLevelFour("");
 
@@ -64,8 +64,8 @@ public class EventsSeed {
         event3.setEventDetails("Time to portray your ideas to the world. In the spirit of promoting entrepreneurship in our society, we aim at giving young entrepreneurs a platform to showcase their business ideas that generate a social impact with financial sustainability. Inspired by the recent Startup India mission of our Prime Minister, we put young minds to a scaffold through this competition by letting them explore their local/global market and grab the opportunities in our country which currently has the third largest number of startups in the world and an immensely fast growing economy.");
         event3.setLevelNote("Level Registrations will close on the day before the starting of level 1");
         event3.setMoreInfoLink("https://drive.google.com/file/d/0B5iiTEqAQuR5NXh6b3hxM3NTTFU");
-        event3.setLevelOne("Submission of idea (ppt) and judgement - 23rd February.");
-        event3.setLevelTwo("Iteration and enhancements submission and judgement- 2nd March");
+        event3.setLevelOne("Submission of idea (ppt) and judgement - 25th February.");
+        event3.setLevelTwo("Iteration and enhancements submission and judgement- 4th March");
         event3.setLevelThree("Teams are required to complete a task given in Level 2. – 12th/13th March (during the event at JEC)");
         event3.setLevelFour("");
 
@@ -105,8 +105,8 @@ public class EventsSeed {
         event6.setEventDetails("Code Conclave embraces the real scrutiny of your programming prowess. Fortify yourself to race against time. You will be tested for your competence in your programming, coordination and ability to visualise in the peak of time.");
         event6.setLevelNote("");
         event6.setMoreInfoLink("https://drive.google.com/file/d/0B5iiTEqAQuR5QlFrSDBWLUd4eHM");
-        event6.setLevelOne("Eliminator - 25th February");
-        event6.setLevelTwo("Knock Out – 29th Febuary");
+        event6.setLevelOne("Eliminator - 27th February");
+        event6.setLevelTwo("Knock Out – 2nd March");
         event6.setLevelThree("Coding Finale - 12th/13th March (during the event at JEC)");
         event6.setLevelFour("");
 
