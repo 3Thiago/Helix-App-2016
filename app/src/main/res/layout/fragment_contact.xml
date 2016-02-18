@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
     android:padding="20dp">
 
     <TextView
@@ -90,6 +94,17 @@
             android:layout_marginStart="41dp"
             android:textSize="7pt"
             />
+
     </RelativeLayout>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Built with ♥ by jec-dev"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="25dp"
+        />
+
 </LinearLayout>
+</ScrollView>
